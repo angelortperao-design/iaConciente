@@ -1,0 +1,42 @@
+@startsalt
+{+
+  {* Mi Panel | Recomendador de IAs | <b>Guías Prompt</b> | Validador Preventivo | Chat Orientador | Cerrar Sesión }
+  ---
+  {
+    {T
+      + <b>Temario de Guías</b>
+      ++ <b>1. Estructura de un Buen Prompt</b>
+      ++ 2. Cómo Evitar Alucinaciones
+      ++ 3. Ética y Prevención de Plagio
+      ++ 4. Protección de Datos Sensibles
+      ++ 5. Derechos de Autor en IA
+    }
+    |
+    {^"Guía 1: ¿Cómo estructurar instrucciones claras (Prompts)? (RF-05)"
+      Toda consulta efectiva debe incluir 4 elementos clave:
+      1. <b>Rol:</b> Quién debe ser la IA.
+      2. <b>Contexto:</b> Para qué se necesita la información.
+      3. <b>Tarea específica:</b> Qué debe entregar exactamente.
+      4. <b>Restricciones:</b> Citar fuentes y no inventar datos.
+      ---
+      {
+        {^"EJEMPLO INCORRECTO (Mala Práctica)"
+          "Hazme mi ensayo sobre leyes de IA
+          en México y ponle bibliografía."
+          <i>Riesgo: Plagio académico y citas</i>
+          <i>inventadas (alucinación).</i>
+        }
+        |
+        {^"EJEMPLO CORRECTO (Buena Práctica)"
+          "Actúa como investigador. Explícame
+          los puntos clave de la regulación de IA
+          en México para hacer un esquema de
+          estudio. Si no tienes el dato, indícalo."
+        }
+      }
+      ---
+      { [ Marcar Guía como Leída ] | [ Guardar en Favoritos ] }
+    }
+  }
+}
+@endsalt

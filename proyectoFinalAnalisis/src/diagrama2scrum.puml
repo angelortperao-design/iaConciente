@@ -1,0 +1,31 @@
+@startgantt
+title Cronograma de Sprints SCRUM (3 Semanas) - Plataforma IA-Consciente
+
+Project starts 2026-11-01
+printscale daily
+
+-- Sprint 1: Módulo 1 y Arquitectura MVC --
+[TASK-01 y 02: BD MySQL y Setup MVC] as [T1] lasts 2 days
+[HU-01 y HU-02: Registro y Login (RF-01, RF-02)] as [HU1] lasts 3 days
+[HU1] starts at [T1]'s end
+[HU-03: Panel Progreso y Favoritos (RF-03)] as [HU3] lasts 2 days
+[HU3] starts at [HU1]'s end
+[BUG-01: Fix duplicidad progreso + Sprint 1 Review] happens at [HU3]'s end
+
+-- Sprint 2: Módulo 2 Recomendador y Guías --
+[HU-04: Recomendador IAs por Enfoque (RF-04)] as [HU4] lasts 3 days
+[HU4] starts at [HU3]'s end
+[HU-05: Biblioteca Guías Prompting (RF-05)] as [HU5] lasts 3 days
+[HU5] starts at [HU4]'s end
+[BUG-02: Fix UTF-8 acentos + Sprint 2 Review] as [B2] lasts 1 day
+[B2] starts at [HU5]'s end
+
+-- Sprint 3: Módulos 3 y 4 Prevención y Chat --
+[HU-06: Validador Preventivo en Memoria (RF-06..08)] as [HU6] lasts 4 days
+[HU6] starts at [B2]'s end
+[HU-07: Chat Orientador con Enlaces (RF-09..10)] as [HU7] lasts 2 days
+[HU7] starts at [HU6]'s end
+[BUG-03: Fix Regex CURP + Cierre MVP v1.0] as [B3] lasts 1 day
+[B3] starts at [HU7]'s end
+
+@endgantt

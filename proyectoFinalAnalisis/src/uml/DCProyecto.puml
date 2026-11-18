@@ -1,0 +1,90 @@
+@startuml
+title Diagrama de Clases - Plataforma IA-Consciente
+
+skinparam classAttributeIconSize 0
+skinparam linetype ortho
+skinparam shadowing false
+
+skinparam class {
+    BackgroundColor #F8FAFC
+    BorderColor #1E293B
+    ArrowColor #1E293B
+    HeaderBackgroundColor #E2E8F0
+}
+
+class Usuario {
+    - idUsuario : int
+    - nombre : String
+    - correo : String
+    - passwordHash : String
+    + registrar() : boolean
+    + iniciarSesion() : boolean
+    + editarPerfil() : boolean
+}
+
+class HerramientaIA {
+    - idHerramienta : int
+    - nombre : String
+    - categoriaEnfoque : String
+    - descripcion : String
+    - ventajas : String
+    - limitaciones : String
+    - urlExterna : String
+    + filtrarPorEnfoque(enfoque : String) : List<HerramientaIA>
+}
+
+class GuiaEducativa {
+    - idGuia : int
+    - titulo : String
+    - categoria : String
+    - contenido : String
+    - ejemploPromptBueno : String
+    - ejemploPromptMalo : String
+    + obtenerGuias() : List<GuiaEducativa>
+}
+
+class ProgresoLectura {
+    - idProgreso : int
+    - fechaConsulta : LocalDateTime
+    + registrarAvance(idUsuario : int, idGuia : int) : void
+    + calcularPorcentaje(idUsuario : int) : double
+}
+
+class Favorito {
+    - idFavorito : int
+    + agregarFavorito() : boolean
+    + eliminarFavorito() : boolean
+}
+
+class SimuladorPreventivo <<En Memoria>> {
+    - textoConsulta : String
+    - enfoqueDetectado : String
+    - nivelRiesgo : String
+    - alertaMitigacion : String
+    + analizarDatosSensibles() : List<String>
+    + detectarMalasPracticas() : List<String>
+    + generarRecomendacion() : String
+}
+
+class AgenteChatbot {
+    - idRegla : int
+    - enfoqueProblema : String
+    - palabrasClave : String
+    - respuestaOrientadora : String
+    + procesarConsulta(mensaje : String) : String
+    + obtenerEnlaceIA() : String
+}
+
+' Relaciones
+Usuario "1" -- "0..*" ProgresoLectura : registra >
+GuiaEducativa "1" -- "0..*" ProgresoLectura : tiene >
+
+Usuario "1" -- "0..*" Favorito : guarda >
+Favorito "0..*" --> "0..1" HerramientaIA : referencia >
+Favorito "0..*" --> "0..1" GuiaEducativa : referencia >
+
+Usuario "1" ..> "0..*" SimuladorPreventivo : prueba consultas >
+Usuario "1" ..> "0..*" AgenteChatbot : consulta >
+AgenteChatbot "0..*" --> "1" HerramientaIA : redirige vía URL >
+
+@enduml

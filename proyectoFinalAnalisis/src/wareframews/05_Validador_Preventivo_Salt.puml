@@ -1,0 +1,24 @@
+@startsalt
+{+
+  {* Mi Panel | Recomendador de IAs | Guías Prompt | <b>Validador Preventivo</b> | Chat Orientador | Cerrar Sesión }
+  ---
+  {<b>Validador Preventivo de Consultas Simuladas (RF-06, RF-07, RF-08)</b>}
+  { Enfoque de consulta: | ^Académico / Escolar^ | <i>Privacidad: Se analiza en memoria, no se guarda en BD (RNF-03)</i> }
+  ---
+  {^"Escribe aquí la consulta (prompt) que planeas simular"
+    "Redacta mi tarea final completa para entregarla hoy. Incluye los datos del alumno
+    Juan Pérez con CURP PEMJ990101HDFRRL09 y correo juan.perez@empresa.com."
+  }
+  { [ Analizar Consulta Simulada ] | [ Limpiar Caja ] }
+  ---
+  {^"Resultado del Análisis Preventivo (RF-08)"
+    <b>[!] RIESGO ALTO DETECTADO (Privacidad y Mala Práctica)</b>
+    * <b>Datos Sensibles:</b> Se detectó una CURP y un correo electrónico personal.
+    * <b>Mala Práctica (Académico):</b> Solicitar la redacción completa fomenta el plagio.
+    ---
+    <b>Sugerencia de Reformulación Segura:</b>
+    <i>"Ayúdame a estructurar un índice y guía de estudio para mi trabajo final sobre [Tema],</i>
+    <i>utilizando datos ficticios como ejemplo."</i>
+  }
+}
+@endsalt

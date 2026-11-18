@@ -1,0 +1,30 @@
+@startsalt
+{+
+  {* <b>Mi Panel</b> | Recomendador de IAs | Guías Prompt | Validador Preventivo | Chat Orientador | Cerrar Sesión }
+  ---
+  {<b>Bienvenido, Miguel Ángel Ortiz</b>}
+  {
+    {^"Mi Progreso de Aprendizaje (RN-01)"
+      Avance completado: <b>80%</b> (4 de 5 guías consultadas)
+      [X] Guía 1: ¿Cómo estructurar un buen Prompt?
+      [X] Guía 2: Cómo detectar alucinaciones de la IA
+      [ ] Guía 3: Derechos de autor y prevención de plagio
+    }
+    |
+    {^"Datos de Mi Perfil"
+      Nombre: | "Miguel Ángel Ortiz  "
+      Correo: | "correo@uacm.edu.mx  "
+      .       | [ Actualizar Perfil ]
+    }
+  }
+  ---
+  {^"Mis Herramientas y Guías Favoritas (RF-03)"
+    {#
+      <b>Tipo</b> | <b>Nombre del Recurso</b> | <b>Enfoque</b> | <b>Acción</b>
+      Herramienta IA | Perplexity AI | Investigación con fuentes | [Ir a IA] [Quitar]
+      Herramienta IA | Claude 3.5 | Redacción y código | [Ir a IA] [Quitar]
+      Guía Educativa | Evitar el plagio académico | Ética y Normatividad | [Leer Guía] [Quitar]
+    }
+  }
+}
+@endsalt

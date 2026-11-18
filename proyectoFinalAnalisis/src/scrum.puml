@@ -1,0 +1,79 @@
+@startuml
+title Diagrama de Actividades - Flujo Principal de Orientación y Prevención (IA-Consciente)
+
+skinparam shadowing false
+skinparam activity {
+    BackgroundColor #F8FAFC
+    BorderColor #1E293B
+    ArrowColor #1E293B
+    DiamondBackgroundColor #E2E8F0
+    DiamondBorderColor #1E293B
+}
+
+|Usuario|
+start
+:Accede a la plataforma web IA-Consciente;
+
+if (¿Cuenta con sesión activa?) then (No)
+    :Registra cuenta o inicia sesión (RF-01, RF-02);
+    |Sistema IA-Consciente|
+    :Valida credenciales encriptadas en MySQL;
+else (Sí)
+endif
+
+|Usuario|
+:Selecciona la acción deseada en el panel;
+
+split
+    ' ==========================================
+    ' RAMA 1: CONSULTA DE GUÍAS Y RECOMENDADOR
+    ' ==========================================
+    :Explora biblioteca de guías o filtro de IAs (RF-04, RF-05);
+    |Sistema IA-Consciente|
+    :Muestra guías de Prompt Engineering o IAs filtradas;
+    :Registra progreso de lectura en BD;
+
+split again
+    ' ==========================================
+    ' RAMA 2: VALIDADOR PREVENTIVO (SIMULACIÓN)
+    ' ==========================================
+    |Usuario|
+    :Redacta consulta simulada (prompt) y elige enfoque (RF-06);
+    |Sistema IA-Consciente|
+    :Analiza texto en memoria sin guardarlo en BD (RNF-03, RN-02);
+    :Busca datos sensibles (CURP, RFC, correos) y malas prácticas (RF-07);
+    if (¿Se detectaron riesgos?) then (Sí)
+        :Muestra alerta de riesgo y sugerencia de mitigación (RF-08);
+        |Usuario|
+        :Reformula y anonimiza su consulta;
+    else (No)
+        |Sistema IA-Consciente|
+        :Valida consulta como segura y ética;
+    endif
+
+split again
+    ' ==========================================
+    ' RAMA 3: CHATBOT ORIENTADOR CON ENLACES
+    ' ==========================================
+    |Usuario|
+    :Escribe duda o problema en el chat asesor (RF-09);
+    |Sistema IA-Consciente|
+    :Identifica enfoque del problema y palabras clave (RF-10);
+    :Consulta base de conocimiento en MySQL;
+    :Entrega consejos preventivos y enlace directo a la IA recomendada (RN-03);
+end split
+
+|Usuario|
+if (¿Desea ir a utilizar la IA recomendada?) then (Sí)
+    :Hace clic en el enlace externo sugerido;
+    |Plataforma de IA Externa|
+    :Abre herramienta externa (ChatGPT, Claude, etc.)\nen nueva pestaña;
+else (No)
+    |Usuario|
+    :Guarda guía o herramienta en Favoritos (RF-03);
+endif
+
+|Usuario|
+stop
+
+@enduml

@@ -1,0 +1,88 @@
+@startuml
+title Diagrama de Casos de Uso - Plataforma IA-Consciente (Versión 1.0)
+
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+
+skinparam actor {
+    BackgroundColor #E2E8F0
+    BorderColor #1E293B
+}
+
+skinparam usecase {
+    BackgroundColor #F8FAFC
+    BorderColor #1E293B
+    ArrowColor #1E293B
+}
+
+actor "Usuario" as U
+actor "Plataforma de IA Externa\n(ChatGPT, Claude, etc.)" as IA_Ext <<Sistema Externo>>
+
+rectangle "Plataforma Web IA-Consciente" {
+
+    ' ==========================================
+    ' MÓDULO 1: GESTIÓN DE USUARIOS Y PERFILES
+    ' ==========================================
+    package "Módulo 1: Gestión de Usuarios" {
+        usecase "CU-01: Registrarse en la plataforma\n(RF-01)" as CU01
+        usecase "CU-02: Iniciar y cerrar sesión\n(RF-02)" as CU02
+        usecase "CU-03: Gestionar perfil y progreso\nde lectura" as CU03
+        usecase "CU-04: Guardar herramientas\ny guías en favoritos (RF-03)" as CU04
+    }
+
+    ' ==========================================
+    ' MÓDULO 2: GUÍAS Y RECOMENDADOR DE IAs
+    ' ==========================================
+    package "Módulo 2: Recomendador y Guías" {
+        usecase "CU-05: Filtrar y consultar\nherramientas de IA por necesidad (RF-04)" as CU05
+        usecase "CU-06: Consultar biblioteca de guías\ny Prompt Engineering (RF-05)" as CU06
+    }
+
+    ' ==========================================
+    ' MÓDULO 3: PREVENCIÓN Y SIMULACIÓN
+    ' ==========================================
+    package "Módulo 3: Validador Preventivo" {
+        usecase "CU-07: Simular y analizar\nconsulta / prompt (RF-06)" as CU07
+        usecase "CU-08: Detectar datos sensibles\ny malas prácticas (RF-07)" as CU08
+        usecase "CU-09: Visualizar alertas de riesgo\ny sugerencias de mitigación (RF-08)" as CU09
+    }
+
+    ' ==========================================
+    ' MÓDULO 4: AGENTE DE AUTORESPUESTA
+    ' ==========================================
+    package "Módulo 4: Chat Orientador" {
+        usecase "CU-10: Consultar al chat asesor\nsobre enfoque y riesgos (RF-09, RF-10)" as CU10
+        usecase "CU-11: Acceder a IA recomendada\nmediante enlace externo (RF-09)" as CU11
+    }
+}
+
+' ==========================================
+' RELACIONES DEL ACTOR PRINCIPAL
+' ==========================================
+U --> CU01
+U --> CU02
+U --> CU03
+U --> CU04
+U --> CU05
+U --> CU06
+U --> CU07
+U --> CU10
+
+' ==========================================
+' RELACIONES DE INCLUSIÓN Y EXTENSIÓN
+' ==========================================
+CU07 ..> CU08 : <<include>>
+CU08 ..> CU09 : <<extend>>\n[Si se detecta riesgo]
+
+CU06 ..> CU03 : <<include>>\n(Registra avance)
+
+CU10 ..> CU11 : <<extend>>\n[Al sugerir herramienta]
+CU05 ..> CU11 : <<extend>>\n[Al seleccionar herramienta]
+
+' ==========================================
+' RELACIÓN CON ACTOR SECUNDARIO (EXTERNO)
+' ==========================================
+CU11 --> IA_Ext : Redirige vía URL (RN-03)
+
+@enduml

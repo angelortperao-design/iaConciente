@@ -1,0 +1,26 @@
+@startsalt
+{+
+  {* Mi Panel | Recomendador de IAs | Guías Prompt | Validador Preventivo | <b>Chat Orientador</b> | Cerrar Sesión }
+  ---
+  {<b>Agente Orientador de IA (Base de Conocimiento MySQL - RF-09, RF-10)</b>}
+  ---
+  {^"Conversación en Tiempo Real"
+    {
+      . | {^"Usuario"
+        Necesito buscar artículos científicos con fuentes reales para mi tesis,
+        ¿qué IA uso y qué cuidados debo tener?
+      }
+    }
+    {
+      {^"IA-Consciente [Enfoque: Investigación Académica]"
+        <b>1. Recomendación Preventiva:</b> Evita pedir bibliografía en chats genéricos
+        porque suelen inventar citas (alucinaciones) y no copies párrafos textuales.
+        <b>2. Herramienta Sugerida:</b> Te invitamos a usar Perplexity AI (muestra enlaces reales).
+        [ Abrir Perplexity AI (Enlace Externo - RN-03) ]
+      } | .
+    }
+  }
+  ---
+  { "Escribe tu problema o enfoque de consulta aquí...                     " | [  Consultar  ] }
+}
+@endsalt

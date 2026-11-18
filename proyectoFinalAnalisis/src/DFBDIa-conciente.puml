@@ -1,0 +1,75 @@
+CREATE DATABASE IF NOT EXISTS ia_consciente 
+CHARACTER SET utf8mb4 
+COLLATE utf8mb4_unicode_ci;
+
+USE ia_consciente;
+
+-- 1. Tabla de Usuarios
+CREATE TABLE usuarios (
+    id_usuario INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    correo VARCHAR(120) NOT NULL UNIQUE,
+    password_hash VARCHAR(255) NOT NULL,
+    fecha_registro DATETIME DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB;
+
+-- 2. Tabla de Herramientas de IA
+CREATE TABLE herramientas_ia (
+    id_herramienta INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(80) NOT NULL,
+    enfoque_categoria VARCHAR(50) NOT NULL,
+    descripcion TEXT NOT NULL,
+    ventajas TEXT NOT NULL,
+    limitaciones TEXT NOT NULL,
+    url_externa VARCHAR(255) NOT NULL
+) ENGINE=InnoDB;
+
+-- 3. Tabla de Guías Educativas
+CREATE TABLE guias_educativas (
+    id_guia INT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(150) NOT NULL,
+    categoria VARCHAR(60) NOT NULL,
+    contenido TEXT NOT NULL,
+    ejemplo_prompt_bueno TEXT NOT NULL,
+    ejemplo_prompt_malo TEXT NOT NULL
+) ENGINE=InnoDB;
+
+-- 4. Tabla de Progreso de Lectura
+CREATE TABLE progreso_lectura (
+    id_progreso INT AUTO_INCREMENT PRIMARY KEY,
+    id_usuario INT NOT NULL,
+    id_guia INT NOT NULL,
+    fecha_consulta DATETIME DEFAULT CURRENT_TIMESTAMP,
+    CONSTRAINT fk_progreso_usuario FOREIGN KEY (id_usuario) 
+        REFERENCES usuarios(id_usuario) ON DELETE CASCADE,
+    CONSTRAINT fk_progreso_guia FOREIGN KEY (id_guia) 
+        REFERENCES guias_educativas(id_guia) ON DELETE CASCADE,
+    CONSTRAINT uq_usuario_guia UNIQUE (id_usuario, id_guia)
+) ENGINE=InnoDB;
+
+-- 5. Tabla de Favoritos
+CREATE TABLE favoritos (
+    id_favorito INT AUTO_INCREMENT PRIMARY KEY,
+    id_usuario INT NOT NULL,
+    id_guia INT NULL,
+    id_herramienta INT NULL,
+    fecha_agregado DATETIME DEFAULT CURRENT_TIMESTAMP,
+    CONSTRAINT fk_favorito_usuario FOREIGN KEY (id_usuario) 
+        REFERENCES usuarios(id_usuario) ON DELETE CASCADE,
+    CONSTRAINT fk_favorito_guia FOREIGN KEY (id_guia) 
+        REFERENCES guias_educativas(id_guia) ON DELETE CASCADE,
+    CONSTRAINT fk_favorito_herramienta FOREIGN KEY (id_herramienta) 
+        REFERENCES herramientas_ia(id_herramienta) ON DELETE CASCADE
+) ENGINE=InnoDB;
+
+-- 6. Tabla de Reglas de Conocimiento del Chatbot
+CREATE TABLE reglas_conocimiento_chat (
+    id_regla INT AUTO_INCREMENT PRIMARY KEY,
+    enfoque_problema VARCHAR(60) NOT NULL,
+    palabras_clave VARCHAR(255) NOT NULL,
+    respuesta_orientadora TEXT NOT NULL,
+    consejo_preventivo TEXT NOT NULL,
+    id_herramienta_sugerida INT NOT NULL,
+    CONSTRAINT fk_regla_herramienta FOREIGN KEY (id_herramienta_sugerida) 
+        REFERENCES herramientas_ia(id_herramienta) ON DELETE RESTRICT
+) ENGINE=InnoDB;

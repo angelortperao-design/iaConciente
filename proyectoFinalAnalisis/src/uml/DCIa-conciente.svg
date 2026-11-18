@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="893px" preserveAspectRatio="none" style="width:979px;height:893px;background:#FFFFFF;" version="1.1" viewBox="0 0 979 893" width="979px" zoomAndPan="magnify">
+    <defs/>
+    <g>
+        <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="327" x="319.3233" y="24.5332">Diagrama de Clases - Plataforma IA-Consciente</text>
+        <!--class Usuario-->
+        <g id="elem_Usuario">
+            <rect codeLine="14" fill="#F8FAFC" height="171.2656" id="Usuario" rx="2.5" ry="2.5" style="stroke:#1E293B;stroke-width:0.5;" width="173" x="292.6467" y="45.6094"/>
+            <rect fill="#E2E8F0" height="32" rx="2.5" ry="2.5" style="stroke:#E2E8F0;stroke-width:0.5;" width="173" x="292.6467" y="45.6094"/>
+            <rect fill="#E2E8F0" height="2.5" style="stroke:#E2E8F0;stroke-width:0.5;" width="173" x="292.6467" y="75.1094"/>
+            <rect codeLine="14" fill="none" height="171.2656" id="Usuario" rx="2.5" ry="2.5" style="stroke:#1E293B;stroke-width:0.5;" width="173" x="292.6467" y="45.6094"/>
+            <ellipse cx="350.8967" cy="61.6094" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M353.6623,57.4844 Q353.8185,57.2656 354.006,57.1563 Q354.1935,57.0469 354.4123,57.0469 Q354.7873,57.0469 355.0217,57.3125 Q355.256,57.5625 355.256,58.1719 L355.256,59.625 Q355.256,60.2344 355.0217,60.5 Q354.7873,60.7656 354.4123,60.7656 Q354.0685,60.7656 353.8654,60.5625 Q353.6623,60.375 353.5529,59.8594 Q353.506,59.5 353.3185,59.3125 Q352.9904,58.9375 352.381,58.7188 Q351.7717,58.5 351.1467,58.5 Q350.381,58.5 349.7404,58.8281 Q349.1154,59.1563 348.6154,59.9063 Q348.131,60.6563 348.131,61.6875 L348.131,62.7813 Q348.131,64.0156 349.0217,64.8438 Q349.9123,65.6563 351.506,65.6563 Q352.4435,65.6563 353.0998,65.4063 Q353.4904,65.25 353.9123,64.8125 Q354.1779,64.5469 354.3185,64.4688 Q354.4748,64.3906 354.6779,64.3906 Q355.006,64.3906 355.256,64.6563 Q355.5217,64.9063 355.5217,65.25 Q355.5217,65.5938 355.1779,66 Q354.6779,66.5781 353.881,66.9063 Q352.8029,67.3594 351.506,67.3594 Q349.9904,67.3594 348.7873,66.7344 Q347.8029,66.2344 347.1154,65.1719 Q346.4279,64.0938 346.4279,62.8125 L346.4279,61.6563 Q346.4279,60.3281 347.0373,59.1875 Q347.6623,58.0313 348.756,57.4219 Q349.8498,56.7969 351.0842,56.7969 Q351.8185,56.7969 352.4592,56.9688 Q353.1154,57.125 353.6623,57.4844 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="48" x="371.3967" y="67.3379">Usuario</text>
+            <line style="stroke:#1E293B;stroke-width:0.5;" x1="293.6467" x2="464.6467" y1="77.6094" y2="77.6094"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="91" x="298.6467" y="96.1426">-idUsuario : int</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="102" x="298.6467" y="113.752">-nombre : String</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="95" x="298.6467" y="131.3613">-correo : String</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="146" x="298.6467" y="148.9707">-passwordHash : String</text>
+            <line style="stroke:#1E293B;stroke-width:0.5;" x1="293.6467" x2="464.6467" y1="156.0469" y2="156.0469"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="134" x="298.6467" y="174.5801">+registrar() : boolean</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="161" x="298.6467" y="192.1895">+iniciarSesion() : boolean</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="149" x="298.6467" y="209.7988">+editarPerfil() : boolean</text>
+        </g>
+        <!--class HerramientaIA-->
+        <g id="elem_HerramientaIA">
+            <rect codeLine="24" fill="#F8FAFC" height="188.875" id="HerramientaIA" rx="2.5" ry="2.5" style="stroke:#1E293B;stroke-width:0.5;" width="377" x="532.6467" y="518.6094"/>
+            <rect fill="#E2E8F0" height="32" rx="2.5" ry="2.5" style="stroke:#E2E8F0;stroke-width:0.5;" width="377" x="532.6467" y="518.6094"/>
+            <rect fill="#E2E8F0" height="2.5" style="stroke:#E2E8F0;stroke-width:0.5;" width="377" x="532.6467" y="548.1094"/>
+            <rect codeLine="24" fill="none" height="188.875" id="HerramientaIA" rx="2.5" ry="2.5" style="stroke:#1E293B;stroke-width:0.5;" width="377" x="532.6467" y="518.6094"/>
+            <ellipse cx="672.3967" cy="534.6094" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M675.1623,530.4844 Q675.3185,530.2656 675.506,530.1563 Q675.6935,530.0469 675.9123,530.0469 Q676.2873,530.0469 676.5217,530.3125 Q676.756,530.5625 676.756,531.1719 L676.756,532.625 Q676.756,533.2344 676.5217,533.5 Q676.2873,533.7656 675.9123,533.7656 Q675.5685,533.7656 675.3654,533.5625 Q675.1623,533.375 675.0529,532.8594 Q675.006,532.5 674.8185,532.3125 Q674.4904,531.9375 673.881,531.7188 Q673.2717,531.5 672.6467,531.5 Q671.881,531.5 671.2404,531.8281 Q670.6154,532.1563 670.1154,532.9063 Q669.631,533.6563 669.631,534.6875 L669.631,535.7813 Q669.631,537.0156 670.5217,537.8438 Q671.4123,538.6563 673.006,538.6563 Q673.9435,538.6563 674.5998,538.4063 Q674.9904,538.25 675.4123,537.8125 Q675.6779,537.5469 675.8185,537.4688 Q675.9748,537.3906 676.1779,537.3906 Q676.506,537.3906 676.756,537.6563 Q677.0217,537.9063 677.0217,538.25 Q677.0217,538.5938 676.6779,539 Q676.1779,539.5781 675.381,539.9063 Q674.3029,540.3594 673.006,540.3594 Q671.4904,540.3594 670.2873,539.7344 Q669.3029,539.2344 668.6154,538.1719 Q667.9279,537.0938 667.9279,535.8125 L667.9279,534.6563 Q667.9279,533.3281 668.5373,532.1875 Q669.1623,531.0313 670.256,530.4219 Q671.3498,529.7969 672.5842,529.7969 Q673.3185,529.7969 673.9592,529.9688 Q674.6154,530.125 675.1623,530.4844 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="89" x="692.8967" y="540.3379">HerramientaIA</text>
+            <line style="stroke:#1E293B;stroke-width:0.5;" x1="533.6467" x2="908.6467" y1="550.6094" y2="550.6094"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="538.6467" y="569.1426">-idHerramienta : int</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="102" x="538.6467" y="586.752">-nombre : String</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="166" x="538.6467" y="604.3613">-categoriaEnfoque : String</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="126" x="538.6467" y="621.9707">-descripcion : String</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="107" x="538.6467" y="639.5801">-ventajas : String</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="127" x="538.6467" y="657.1895">-limitaciones : String</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="118" x="538.6467" y="674.7988">-urlExterna : String</text>
+            <line style="stroke:#1E293B;stroke-width:0.5;" x1="533.6467" x2="908.6467" y1="681.875" y2="681.875"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="365" x="538.6467" y="700.4082">+filtrarPorEnfoque(enfoque : String) : List&lt;HerramientaIA&gt;</text>
+        </g>
+        <!--class GuiaEducativa-->
+        <g id="elem_GuiaEducativa">
+            <rect codeLine="35" fill="#F8FAFC" height="171.2656" id="GuiaEducativa" rx="2.5" ry="2.5" style="stroke:#1E293B;stroke-width:0.5;" width="258" x="134.1467" y="527.6094"/>
+            <rect fill="#E2E8F0" height="32" rx="2.5" ry="2.5" style="stroke:#E2E8F0;stroke-width:0.5;" width="258" x="134.1467" y="527.6094"/>
+            <rect fill="#E2E8F0" height="2.5" style="stroke:#E2E8F0;stroke-width:0.5;" width="258" x="134.1467" y="557.1094"/>
+            <rect codeLine="35" fill="none" height="171.2656" id="GuiaEducativa" rx="2.5" ry="2.5" style="stroke:#1E293B;stroke-width:0.5;" width="258" x="134.1467" y="527.6094"/>
+            <ellipse cx="212.8967" cy="543.6094" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M215.6623,539.4844 Q215.8185,539.2656 216.006,539.1563 Q216.1935,539.0469 216.4123,539.0469 Q216.7873,539.0469 217.0217,539.3125 Q217.256,539.5625 217.256,540.1719 L217.256,541.625 Q217.256,542.2344 217.0217,542.5 Q216.7873,542.7656 216.4123,542.7656 Q216.0685,542.7656 215.8654,542.5625 Q215.6623,542.375 215.5529,541.8594 Q215.506,541.5 215.3185,541.3125 Q214.9904,540.9375 214.381,540.7188 Q213.7717,540.5 213.1467,540.5 Q212.381,540.5 211.7404,540.8281 Q211.1154,541.1563 210.6154,541.9063 Q210.131,542.6563 210.131,543.6875 L210.131,544.7813 Q210.131,546.0156 211.0217,546.8438 Q211.9123,547.6563 213.506,547.6563 Q214.4435,547.6563 215.0998,547.4063 Q215.4904,547.25 215.9123,546.8125 Q216.1779,546.5469 216.3185,546.4688 Q216.4748,546.3906 216.6779,546.3906 Q217.006,546.3906 217.256,546.6563 Q217.5217,546.9063 217.5217,547.25 Q217.5217,547.5938 217.1779,548 Q216.6779,548.5781 215.881,548.9063 Q214.8029,549.3594 213.506,549.3594 Q211.9904,549.3594 210.7873,548.7344 Q209.8029,548.2344 209.1154,547.1719 Q208.4279,546.0938 208.4279,544.8125 L208.4279,543.6563 Q208.4279,542.3281 209.0373,541.1875 Q209.6623,540.0313 210.756,539.4219 Q211.8498,538.7969 213.0842,538.7969 Q213.8185,538.7969 214.4592,538.9688 Q215.1154,539.125 215.6623,539.4844 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="92" x="233.3967" y="549.3379">GuiaEducativa</text>
+            <line style="stroke:#1E293B;stroke-width:0.5;" x1="135.1467" x2="391.1467" y1="559.6094" y2="559.6094"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="140.1467" y="578.1426">-idGuia : int</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="140.1467" y="595.752">-titulo : String</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="113" x="140.1467" y="613.3613">-categoria : String</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="140.1467" y="630.9707">-contenido : String</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="189" x="140.1467" y="648.5801">-ejemploPromptBueno : String</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="178" x="140.1467" y="666.1895">-ejemploPromptMalo : String</text>
+            <line style="stroke:#1E293B;stroke-width:0.5;" x1="135.1467" x2="391.1467" y1="673.2656" y2="673.2656"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="246" x="140.1467" y="691.7988">+obtenerGuias() : List&lt;GuiaEducativa&gt;</text>
+        </g>
+        <!--class ProgresoLectura-->
+        <g id="elem_ProgresoLectura">
+            <rect codeLine="45" fill="#F8FAFC" height="118.4375" id="ProgresoLectura" rx="2.5" ry="2.5" style="stroke:#1E293B;stroke-width:0.5;" width="330" x="7.1467" y="767.6094"/>
+            <rect fill="#E2E8F0" height="32" rx="2.5" ry="2.5" style="stroke:#E2E8F0;stroke-width:0.5;" width="330" x="7.1467" y="767.6094"/>
+            <rect fill="#E2E8F0" height="2.5" style="stroke:#E2E8F0;stroke-width:0.5;" width="330" x="7.1467" y="797.1094"/>
+            <rect codeLine="45" fill="none" height="118.4375" id="ProgresoLectura" rx="2.5" ry="2.5" style="stroke:#1E293B;stroke-width:0.5;" width="330" x="7.1467" y="767.6094"/>
+            <ellipse cx="114.8967" cy="783.6094" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M117.6623,779.4844 Q117.8185,779.2656 118.006,779.1563 Q118.1935,779.0469 118.4123,779.0469 Q118.7873,779.0469 119.0217,779.3125 Q119.256,779.5625 119.256,780.1719 L119.256,781.625 Q119.256,782.2344 119.0217,782.5 Q118.7873,782.7656 118.4123,782.7656 Q118.0685,782.7656 117.8654,782.5625 Q117.6623,782.375 117.5529,781.8594 Q117.506,781.5 117.3185,781.3125 Q116.9904,780.9375 116.381,780.7188 Q115.7717,780.5 115.1467,780.5 Q114.381,780.5 113.7404,780.8281 Q113.1154,781.1563 112.6154,781.9063 Q112.131,782.6563 112.131,783.6875 L112.131,784.7813 Q112.131,786.0156 113.0217,786.8438 Q113.9123,787.6563 115.506,787.6563 Q116.4435,787.6563 117.0998,787.4063 Q117.4904,787.25 117.9123,786.8125 Q118.1779,786.5469 118.3185,786.4688 Q118.4748,786.3906 118.6779,786.3906 Q119.006,786.3906 119.256,786.6563 Q119.5217,786.9063 119.5217,787.25 Q119.5217,787.5938 119.1779,788 Q118.6779,788.5781 117.881,788.9063 Q116.8029,789.3594 115.506,789.3594 Q113.9904,789.3594 112.7873,788.7344 Q111.8029,788.2344 111.1154,787.1719 Q110.4279,786.0938 110.4279,784.8125 L110.4279,783.6563 Q110.4279,782.3281 111.0373,781.1875 Q111.6623,780.0313 112.756,779.4219 Q113.8498,778.7969 115.0842,778.7969 Q115.8185,778.7969 116.4592,778.9688 Q117.1154,779.125 117.6623,779.4844 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="106" x="135.3967" y="789.3379">ProgresoLectura</text>
+            <line style="stroke:#1E293B;stroke-width:0.5;" x1="8.1467" x2="336.1467" y1="799.6094" y2="799.6094"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101" x="13.1467" y="818.1426">-idProgreso : int</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="203" x="13.1467" y="835.752">-fechaConsulta : LocalDateTime</text>
+            <line style="stroke:#1E293B;stroke-width:0.5;" x1="8.1467" x2="336.1467" y1="842.8281" y2="842.8281"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="318" x="13.1467" y="861.3613">+registrarAvance(idUsuario : int, idGuia : int) : void</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="276" x="13.1467" y="878.9707">+calcularPorcentaje(idUsuario : int) : double</text>
+        </g>
+        <!--class Favorito-->
+        <g id="elem_Favorito">
+            <rect codeLine="52" fill="#F8FAFC" height="100.8281" id="Favorito" rx="2.5" ry="2.5" style="stroke:#1E293B;stroke-width:0.5;" width="195" x="149.6467" y="317.1094"/>
+            <rect fill="#E2E8F0" height="32" rx="2.5" ry="2.5" style="stroke:#E2E8F0;stroke-width:0.5;" width="195" x="149.6467" y="317.1094"/>
+            <rect fill="#E2E8F0" height="2.5" style="stroke:#E2E8F0;stroke-width:0.5;" width="195" x="149.6467" y="346.6094"/>
+            <rect codeLine="52" fill="none" height="100.8281" id="Favorito" rx="2.5" ry="2.5" style="stroke:#1E293B;stroke-width:0.5;" width="195" x="149.6467" y="317.1094"/>
+            <ellipse cx="216.8967" cy="333.1094" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M219.6623,328.9844 Q219.8185,328.7656 220.006,328.6563 Q220.1935,328.5469 220.4123,328.5469 Q220.7873,328.5469 221.0217,328.8125 Q221.256,329.0625 221.256,329.6719 L221.256,331.125 Q221.256,331.7344 221.0217,332 Q220.7873,332.2656 220.4123,332.2656 Q220.0685,332.2656 219.8654,332.0625 Q219.6623,331.875 219.5529,331.3594 Q219.506,331 219.3185,330.8125 Q218.9904,330.4375 218.381,330.2188 Q217.7717,330 217.1467,330 Q216.381,330 215.7404,330.3281 Q215.1154,330.6563 214.6154,331.4063 Q214.131,332.1563 214.131,333.1875 L214.131,334.2813 Q214.131,335.5156 215.0217,336.3438 Q215.9123,337.1563 217.506,337.1563 Q218.4435,337.1563 219.0998,336.9063 Q219.4904,336.75 219.9123,336.3125 Q220.1779,336.0469 220.3185,335.9688 Q220.4748,335.8906 220.6779,335.8906 Q221.006,335.8906 221.256,336.1563 Q221.5217,336.4063 221.5217,336.75 Q221.5217,337.0938 221.1779,337.5 Q220.6779,338.0781 219.881,338.4063 Q218.8029,338.8594 217.506,338.8594 Q215.9904,338.8594 214.7873,338.2344 Q213.8029,337.7344 213.1154,336.6719 Q212.4279,335.5938 212.4279,334.3125 L212.4279,333.1563 Q212.4279,331.8281 213.0373,330.6875 Q213.6623,329.5313 214.756,328.9219 Q215.8498,328.2969 217.0842,328.2969 Q217.8185,328.2969 218.4592,328.4688 Q219.1154,328.625 219.6623,328.9844 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="52" x="237.3967" y="338.8379">Favorito</text>
+            <line style="stroke:#1E293B;stroke-width:0.5;" x1="150.6467" x2="343.6467" y1="349.1094" y2="349.1094"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="95" x="155.6467" y="367.6426">-idFavorito : int</text>
+            <line style="stroke:#1E293B;stroke-width:0.5;" x1="150.6467" x2="343.6467" y1="374.7188" y2="374.7188"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="183" x="155.6467" y="393.252">+agregarFavorito() : boolean</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182" x="155.6467" y="410.8613">+eliminarFavorito() : boolean</text>
+        </g>
+        <!--class SimuladorPreventivo-->
+        <g id="elem_SimuladorPreventivo">
+            <rect codeLine="58" fill="#F8FAFC" height="181.9688" id="SimuladorPreventivo" rx="2.5" ry="2.5" style="stroke:#1E293B;stroke-width:0.5;" width="264" x="380.1467" y="276.6094"/>
+            <rect fill="#E2E8F0" height="42.7031" rx="2.5" ry="2.5" style="stroke:#E2E8F0;stroke-width:0.5;" width="264" x="380.1467" y="276.6094"/>
+            <rect fill="#E2E8F0" height="2.5" style="stroke:#E2E8F0;stroke-width:0.5;" width="264" x="380.1467" y="316.8125"/>
+            <rect codeLine="58" fill="none" height="181.9688" id="SimuladorPreventivo" rx="2.5" ry="2.5" style="stroke:#1E293B;stroke-width:0.5;" width="264" x="380.1467" y="276.6094"/>
+            <ellipse cx="442.8967" cy="297.9609" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M445.6623,293.8359 Q445.8185,293.6172 446.006,293.5078 Q446.1935,293.3984 446.4123,293.3984 Q446.7873,293.3984 447.0217,293.6641 Q447.256,293.9141 447.256,294.5234 L447.256,295.9766 Q447.256,296.5859 447.0217,296.8516 Q446.7873,297.1172 446.4123,297.1172 Q446.0685,297.1172 445.8654,296.9141 Q445.6623,296.7266 445.5529,296.2109 Q445.506,295.8516 445.3185,295.6641 Q444.9904,295.2891 444.381,295.0703 Q443.7717,294.8516 443.1467,294.8516 Q442.381,294.8516 441.7404,295.1797 Q441.1154,295.5078 440.6154,296.2578 Q440.131,297.0078 440.131,298.0391 L440.131,299.1328 Q440.131,300.3672 441.0217,301.1953 Q441.9123,302.0078 443.506,302.0078 Q444.4435,302.0078 445.0998,301.7578 Q445.4904,301.6016 445.9123,301.1641 Q446.1779,300.8984 446.3185,300.8203 Q446.4748,300.7422 446.6779,300.7422 Q447.006,300.7422 447.256,301.0078 Q447.5217,301.2578 447.5217,301.6016 Q447.5217,301.9453 447.1779,302.3516 Q446.6779,302.9297 445.881,303.2578 Q444.8029,303.7109 443.506,303.7109 Q441.9904,303.7109 440.7873,303.0859 Q439.8029,302.5859 439.1154,301.5234 Q438.4279,300.4453 438.4279,299.1641 L438.4279,298.0078 Q438.4279,296.6797 439.0373,295.5391 Q439.6623,294.3828 440.756,293.7734 Q441.8498,293.1484 443.0842,293.1484 Q443.8185,293.1484 444.4592,293.3203 Q445.1154,293.4766 445.6623,293.8359 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="80" x="488.3967" y="294.0664">«En Memoria»</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="130" x="463.3967" y="311.2363">SimuladorPreventivo</text>
+            <line style="stroke:#1E293B;stroke-width:0.5;" x1="381.1467" x2="643.1467" y1="319.3125" y2="319.3125"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="140" x="386.1467" y="337.8457">-textoConsulta : String</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="171" x="386.1467" y="355.4551">-enfoqueDetectado : String</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="127" x="386.1467" y="373.0645">-nivelRiesgo : String</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="153" x="386.1467" y="390.6738">-alertaMitigacion : String</text>
+            <line style="stroke:#1E293B;stroke-width:0.5;" x1="381.1467" x2="643.1467" y1="397.75" y2="397.75"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="252" x="386.1467" y="416.2832">+analizarDatosSensibles() : List&lt;String&gt;</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="252" x="386.1467" y="433.8926">+detectarMalasPracticas() : List&lt;String&gt;</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="219" x="386.1467" y="451.502">+generarRecomendacion() : String</text>
+        </g>
+        <!--class AgenteChatbot-->
+        <g id="elem_AgenteChatbot">
+            <rect codeLine="68" fill="#F8FAFC" height="153.6563" id="AgenteChatbot" rx="2.5" ry="2.5" style="stroke:#1E293B;stroke-width:0.5;" width="293" x="679.6467" y="290.6094"/>
+            <rect fill="#E2E8F0" height="32" rx="2.5" ry="2.5" style="stroke:#E2E8F0;stroke-width:0.5;" width="293" x="679.6467" y="290.6094"/>
+            <rect fill="#E2E8F0" height="2.5" style="stroke:#E2E8F0;stroke-width:0.5;" width="293" x="679.6467" y="320.1094"/>
+            <rect codeLine="68" fill="none" height="153.6563" id="AgenteChatbot" rx="2.5" ry="2.5" style="stroke:#1E293B;stroke-width:0.5;" width="293" x="679.6467" y="290.6094"/>
+            <ellipse cx="774.3967" cy="306.6094" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M777.1623,302.4844 Q777.3185,302.2656 777.506,302.1563 Q777.6935,302.0469 777.9123,302.0469 Q778.2873,302.0469 778.5217,302.3125 Q778.756,302.5625 778.756,303.1719 L778.756,304.625 Q778.756,305.2344 778.5217,305.5 Q778.2873,305.7656 777.9123,305.7656 Q777.5685,305.7656 777.3654,305.5625 Q777.1623,305.375 777.0529,304.8594 Q777.006,304.5 776.8185,304.3125 Q776.4904,303.9375 775.881,303.7188 Q775.2717,303.5 774.6467,303.5 Q773.881,303.5 773.2404,303.8281 Q772.6154,304.1563 772.1154,304.9063 Q771.631,305.6563 771.631,306.6875 L771.631,307.7813 Q771.631,309.0156 772.5217,309.8438 Q773.4123,310.6563 775.006,310.6563 Q775.9435,310.6563 776.5998,310.4063 Q776.9904,310.25 777.4123,309.8125 Q777.6779,309.5469 777.8185,309.4688 Q777.9748,309.3906 778.1779,309.3906 Q778.506,309.3906 778.756,309.6563 Q779.0217,309.9063 779.0217,310.25 Q779.0217,310.5938 778.6779,311 Q778.1779,311.5781 777.381,311.9063 Q776.3029,312.3594 775.006,312.3594 Q773.4904,312.3594 772.2873,311.7344 Q771.3029,311.2344 770.6154,310.1719 Q769.9279,309.0938 769.9279,307.8125 L769.9279,306.6563 Q769.9279,305.3281 770.5373,304.1875 Q771.1623,303.0313 772.256,302.4219 Q773.3498,301.7969 774.5842,301.7969 Q775.3185,301.7969 775.9592,301.9688 Q776.6154,302.125 777.1623,302.4844 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="95" x="794.8967" y="312.3379">AgenteChatbot</text>
+            <line style="stroke:#1E293B;stroke-width:0.5;" x1="680.6467" x2="971.6467" y1="322.6094" y2="322.6094"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="685.6467" y="341.1426">-idRegla : int</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="166" x="685.6467" y="358.752">-enfoqueProblema : String</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="145" x="685.6467" y="376.3613">-palabrasClave : String</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="193" x="685.6467" y="393.9707">-respuestaOrientadora : String</text>
+            <line style="stroke:#1E293B;stroke-width:0.5;" x1="680.6467" x2="971.6467" y1="401.0469" y2="401.0469"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="281" x="685.6467" y="419.5801">+procesarConsulta(mensaje : String) : String</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="171" x="685.6467" y="437.1895">+obtenerEnlaceIA() : String</text>
+        </g>
+        <!--link Usuario to ProgresoLectura-->
+        <g id="link_Usuario_ProgresoLectura">
+            <path codeLine="78" d="M292.3867,131.6094 C201.1467,131.6094 70.6467,131.6094 70.6467,131.6094 C70.6467,131.6094 70.6467,599.2794 70.6467,767.3494 " fill="none" id="Usuario-ProgresoLectura" style="stroke:#1E293B;stroke-width:1.0;"/>
+            <polygon fill="#000000" points="16,334.5062,21.7538,326.9336,16.2039,324.9978,16,334.5062" style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="43" x="26.6467" y="335.1045">registra</text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="277.6299" y="128.4637">1</text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="20" x="37.0576" y="756.6419">0..*</text>
+        </g>
+        <!--link GuiaEducativa to ProgresoLectura-->
+        <g id="link_GuiaEducativa_ProgresoLectura">
+            <path codeLine="79" d="M235.6467,698.7194 C235.6467,721.7994 235.6467,746.2594 235.6467,767.5394 " fill="none" id="GuiaEducativa-ProgresoLectura" style="stroke:#1E293B;stroke-width:1.0;"/>
+            <polygon fill="#000000" points="197.6467,729.3052,200.5856,720.2601,194.7077,720.2601,197.6467,729.3052" style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="28" x="206.6467" y="729.6245">tiene</text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="225.9826" y="720.2628">1</text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="20" x="222.167" y="756.8551">0..*</text>
+        </g>
+        <!--link Usuario to Favorito-->
+        <g id="link_Usuario_Favorito">
+            <path codeLine="81" d="M318.6467,216.8294 C318.6467,250.3994 318.6467,287.7694 318.6467,316.9094 " fill="none" id="Usuario-Favorito" style="stroke:#1E293B;stroke-width:1.0;"/>
+            <polygon fill="#000000" points="269.6467,263.0452,272.5856,254.0001,266.7077,254.0001,269.6467,263.0452" style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="39" x="278.6467" y="263.3645">guarda</text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="306.1467" y="238.3822">1</text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="20" x="307.2951" y="306.1866">0..*</text>
+        </g>
+        <!--link Favorito to HerramientaIA-->
+        <g id="link_Favorito_HerramientaIA">
+            <path codeLine="82" d="M279.6467,418.2594 C279.6467,463.8094 279.6467,523.6094 279.6467,523.6094 C279.6467,523.6094 527.6267,523.6094 527.6267,523.6094 " fill="none" id="Favorito-to-HerramientaIA" style="stroke:#1E293B;stroke-width:1.0;"/>
+            <polygon fill="#1E293B" points="532.6267,523.6094,523.6267,519.6094,527.6267,523.6094,523.6267,527.6094,532.6267,523.6094" style="stroke:#1E293B;stroke-width:1.0;"/>
+            <polygon fill="#000000" points="289.5686,516.7402,282.3928,510.4985,280.0945,515.9084,289.5686,516.7402" style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="56" x="293.9667" y="520.1045">referencia</text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="20" x="262.5295" y="439.3026">0..*</text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="22" x="502.8329" y="517.3052">0..1</text>
+        </g>
+        <!--link Favorito to GuiaEducativa-->
+        <g id="link_Favorito_GuiaEducativa">
+            <path codeLine="83" d="M214.6467,418.1794 C214.6467,418.1794 214.6467,522.3094 214.6467,522.3094 " fill="none" id="Favorito-to-GuiaEducativa" style="stroke:#1E293B;stroke-width:1.0;"/>
+            <polygon fill="#1E293B" points="214.6467,527.3094,218.6467,518.3094,214.6467,522.3094,210.6467,518.3094,214.6467,527.3094" style="stroke:#1E293B;stroke-width:1.0;"/>
+            <polygon fill="#000000" points="148.6467,466.4252,151.5856,457.3801,145.7077,457.3801,148.6467,466.4252" style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="56" x="157.6467" y="466.7445">referencia</text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="20" x="188.9357" y="439.58">0..*</text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="22" x="187.5334" y="516.7472">0..1</text>
+        </g>
+        <!--link Usuario to SimuladorPreventivo-->
+        <g id="link_Usuario_SimuladorPreventivo">
+            <path codeLine="85" d="M422.8967,216.8294 C422.8967,216.8294 422.8967,271.5994 422.8967,271.5994 " fill="none" id="Usuario-to-SimuladorPreventivo" style="stroke:#1E293B;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/>
+            <polygon fill="#1E293B" points="422.8967,276.5994,426.8967,267.5994,422.8967,271.5994,418.8967,267.5994,422.8967,276.5994" style="stroke:#1E293B;stroke-width:1.0;"/>
+            <polygon fill="#000000" points="427.8967,240.3952,430.8356,231.3501,424.9577,231.3501,427.8967,240.3952" style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="99" x="436.8967" y="240.7145">prueba consultas</text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="419.3556" y="238.3822">1</text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="20" x="394.3674" y="265.6023">0..*</text>
+        </g>
+        <!--link Usuario to AgenteChatbot-->
+        <g id="link_Usuario_AgenteChatbot">
+            <path codeLine="86" d="M465.8667,131.6094 C595.8567,131.6094 826.1467,131.6094 826.1467,131.6094 C826.1467,131.6094 826.1467,285.3294 826.1467,285.3294 " fill="none" id="Usuario-to-AgenteChatbot" style="stroke:#1E293B;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/>
+            <polygon fill="#1E293B" points="826.1467,290.3294,830.1467,281.3294,826.1467,285.3294,822.1467,281.3294,826.1467,290.3294" style="stroke:#1E293B;stroke-width:1.0;"/>
+            <polygon fill="#000000" points="668.4656,124.7474,661.2994,118.4945,658.9927,123.9009,668.4656,124.7474" style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="49" x="672.8667" y="128.1045">consulta</text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="473.6199" y="128.4637">1</text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="20" x="805.1935" y="279.7294">0..*</text>
+        </g>
+        <!--link AgenteChatbot to HerramientaIA-->
+        <g id="link_AgenteChatbot_HerramientaIA">
+            <path codeLine="87" d="M794.6467,444.6094 C794.6467,444.6094 794.6467,513.2494 794.6467,513.2494 " fill="none" id="AgenteChatbot-to-HerramientaIA" style="stroke:#1E293B;stroke-width:1.0;"/>
+            <polygon fill="#1E293B" points="794.6467,518.2494,798.6467,509.2494,794.6467,513.2494,790.6467,509.2494,794.6467,518.2494" style="stroke:#1E293B;stroke-width:1.0;"/>
+            <polygon fill="#000000" points="694.6467,475.1052,697.5856,466.0601,691.7077,466.0601,694.6467,475.1052" style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="703.6467" y="475.4245">redirige vía URL</text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="20" x="770.9506" y="465.7058">0..*</text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="793.006" y="507.8875">1</text>
+        </g>
+        <!--SRC=[ZLNRRjj647tNLopSXwfrPJZfIseO0cHPgWtOg20r7p1QZgX9bZlgx59E4_IJ-XNviGmfYkP5IgidOIuxvvovC59qQEu9Ke4CJ89cwY1WC2EpS11XmwBcnybeoZvOGXznC0WVoUz04upLu329KMYTHtoqx5Vq6Srr8yIHn_Zt3WrBt7B34RQGy0lvr6p0XVwpvil0wEyExCTKEFV9b1sB-M7-RZwPJmy-bWIbih-PlVtjrxlIFX7Xbxxv0K73Um_EtixUpQy7_mm6XxhlGmv2NDKV6KgEbXj3FbPMpzbQK4qhPU_JocfP1BbhtUcpBuhr0SAsxRiqWYc5A233dzIrPdO8llAH9qiWAmp4_eGV4ueW2vGDkPQxvlA0ee8MVOF7IODHm_v_M474b8LWvZVyLzxp9nYiqCugogvhNvJu0A5hTvGfzY83UxvStEnJHF7G5Kjv5b8jM2eaG-mWAbHuKa5lMyp7huhydYkD95TAj8U68eMz9KMac3i-AqM_yxeRdf9U1dx0RETu8PpjubsE_liHpz0jUcbuhK-Z5133i6ROOj9WgE-aWe6VqCPScXoFdXRF3Tej5EkTkt8OdjY2krUQVrA6tI6TxC5R77PMufUMVWN0FLDIvUfhDdTbqsmv3Btq8Y7XVEtmbSGSzgfoR6vXRNf5VsdqS64ASlITMf9YrFoPaBhUYZ85cR0i18kPfJsRszkPDy-O5UqUZsia4Jz5RWZMxkLX7kynglhGdmPFUtHBmf3sNE1G8ZnJf1JwgwHKFJZw3AAzuR127qWLQyp38NXSHIS71ABp164XO2DPE1kT5lC5iaJB6Vgah5_6LWXgdIPfyGsORY6kEJQQiyJKjVUdKa9dJc5cqB-93jO2GRyt-zv1qI7TvHWY_27b1cjVUhTW9smnW1mxCLJWGQUhTGfEhT7CEx3uEEdm-z4iqLKNQN2Spuit5sOqCXVNLrS_N_GswwPU33CUj0_BVoL6vOMQTQPIOzPJzIT5WTfMnOn6u_Al9hRFV05hWu9UFnxVpsjZxkIre5rTZO_vfrRbHjkHungACrXs8-W3P_BR8tHJfsX6szN4Uv9aGa8fcltNVy6yNpxf0zy0]-->
+    </g>
+</svg>

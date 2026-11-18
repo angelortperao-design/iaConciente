@@ -1,0 +1,30 @@
+@startsalt
+{+
+  {* Mi Panel | <b>Recomendador de IAs</b> | Guías Prompt | Validador Preventivo | Chat Orientador | Cerrar Sesión }
+  ---
+  {<b>Recomendador de Herramientas de IA por Necesidad (RF-04)</b>}
+  { Selecciona tu enfoque: | ^Todas^ | (X) Redacción | () Programación | () Investigación | () Diseño }
+  ---
+  {
+    {^"Perplexity AI [Investigación]"
+      <b>Ventajas:</b> Cita fuentes y enlaces reales.
+      <b>Limitaciones:</b> Menor creatividad literaria.
+      <b>Consejo:</b> Verifica siempre las referencias.
+      [ Ir a Perplexity (URL) ] | [ Guardar Favorito ]
+    }
+    |
+    {^"Claude 3.5 [Programación]"
+      <b>Ventajas:</b> Gran comprensión de Java y SQL.
+      <b>Limitaciones:</b> Puede sugerir código obsoleto.
+      <b>Consejo:</b> Nunca pegues contraseñas o claves.
+      [ Ir a Claude (URL) ] | [ Guardar Favorito ]
+    }
+  }
+  {^"ChatGPT (OpenAI) [Redacción y Lluvia de Ideas]"
+    <b>Ventajas:</b> Versátil para estructurar textos y esquemas educativos.
+    <b>Limitaciones:</b> Propenso a "alucinaciones" si se piden datos exactos sin contexto.
+    <b>Consejo Preventivo:</b> Úsalo como borrador, nunca para copiar y pegar sin revisión (evita plagio).
+    [ Ir a ChatGPT (URL) ] | [ Guardar Favorito ]
+  }
+}
+@endsalt

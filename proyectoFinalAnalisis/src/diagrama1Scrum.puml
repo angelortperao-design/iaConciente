@@ -1,0 +1,39 @@
+@startwbs
+title Estructura Ágil SCRUM - Product Backlog, Sprints, HU, Tasks y Bugs (IA-Consciente)
+
+skinparam shadowing false
+skinparam backgroundColor #FFFFFF
+skinparam node {
+    BackgroundColor #F8FAFC
+    BorderColor #1E293B
+}
+
+* <b>Product Backlog: IA-Consciente v1.0</b>\n(Duración Total: 3 Semanas / 4 Módulos)
+** <b>SPRINT 1 (Semana 1)</b>\nBase de Datos y Módulo 1: Usuarios
+*** <b>HU-01 (RF-01):</b> Registro encriptado
+**** <i>TASK-01:</i> Crear BD MySQL (utf8mb4)
+**** <i>TASK-02:</i> Configurar MVC NetBeans/Tomcat
+**** <i>TASK-03:</i> Programar UsuarioServlet y Hash
+*** <b>HU-02 (RF-02):</b> Inicio y cierre de sesión
+**** <i>TASK-04:</i> Vista login.jsp y PreparedStatement
+*** <b>HU-03 (RF-03):</b> Panel progreso (80%) y Favoritos
+**** <i>TASK-05:</i> Vista panel.jsp y ProgresoDAO
+**** <color:red><b>BUG-01:</b></color> Duplicidad de progreso al recargar\n(Resuelto con UNIQUE en BD)
+
+** <b>SPRINT 2 (Semana 2)</b>\nMódulo 2: Recomendador y Guías
+*** <b>HU-04 (RF-04):</b> Filtro de IAs por enfoque
+**** <i>TASK-06:</i> Catálogo herramientas_ia y URLs (RN-03)
+*** <b>HU-05 (RF-05):</b> Biblioteca Prompt Engineering
+**** <i>TASK-07:</i> Vista guias.jsp (Ejemplos Bueno/Malo)
+**** <color:red><b>BUG-02:</b></color> Fallo de filtro con acentos UTF-8\n(Resuelto en JDBC connection)
+
+** <b>SPRINT 3 (Semana 3)</b>\nMódulo 3 (Validador) y Módulo 4 (Chat)
+*** <b>HU-06 (RF-06..08):</b> Simulador preventivo en memoria
+**** <i>TASK-08:</i> AnalizadorPreventivoService (Regex RAM)
+**** <i>TASK-09:</i> Vista validador.jsp (<2 seg - RNF-02)
+**** <color:red><b>BUG-03:</b></color> CURP en minúsculas no detectada\n(Resuelto con CASE_INSENSITIVE)
+*** <b>HU-07 (RF-09..10):</b> Chat asesor con enlaces
+**** <i>TASK-10:</i> AgenteAutorespuestaService + MySQL
+**** <i>TASK-11:</i> Vista chat.jsp con redirección URL
+
+@endwbs

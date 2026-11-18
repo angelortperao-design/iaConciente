@@ -1,0 +1,22 @@
+@startsalt
+{+
+  {<b>IA-Consciente v1.0</b> - Plataforma Educativa para el Uso Ético y Seguro de la IA}
+  ---
+  {
+    {^"Iniciar Sesión (RF-02)"
+      Correo Electrónico: | "usuario@ejemplo.com      "
+      Contraseña:         | "************             "
+      .                   | [   Entrar al Sistema   ]
+    }
+    |
+    {^"Crear Cuenta Nueva (RF-01)"
+      Nombre Completo:    | "Miguel Ángel Ortiz       "
+      Correo Electrónico: | "correo@uacm.edu.mx       "
+      Contraseña:         | "************             "
+      .                   | [    Registrar Cuenta    ]
+    }
+  }
+  ---
+  {<i>Prototipo Educativo Versión 1.0 (MVP) - Sin exámenes ni calificaciones (RN-01)</i>}
+}
+@endsalt

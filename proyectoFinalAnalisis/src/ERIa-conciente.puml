@@ -1,0 +1,80 @@
+@startuml
+title Diagrama Entidad-Relación Conceptual - Plataforma IA-Consciente
+
+skinparam shadowing false
+skinparam linetype ortho
+skinparam entity {
+    BackgroundColor #F8FAFC
+    BorderColor #1E293B
+    HeaderBackgroundColor #E2E8F0
+}
+
+entity "USUARIO" as Usuario {
+    * id_usuario <<PK>>
+    --
+    nombre
+    correo
+    password_hash
+    fecha_registro
+}
+
+entity "GUIA_EDUCATIVA" as Guia {
+    * id_guia <<PK>>
+    --
+    titulo
+    categoria
+    contenido
+    ejemplo_prompt_bueno
+    ejemplo_prompt_malo
+}
+
+entity "HERRAMIENTA_IA" as Herramienta {
+    * id_herramienta <<PK>>
+    --
+    nombre
+    enfoque_categoria
+    descripcion
+    ventajas
+    limitaciones
+    url_externa
+}
+
+entity "PROGRESO_LECTURA" as Progreso {
+    * id_progreso <<PK>>
+    --
+    fecha_consulta
+}
+
+entity "FAVORITO" as Favorito {
+    * id_favorito <<PK>>
+    --
+    fecha_agregado
+}
+
+entity "REGLA_CONOCIMIENTO_CHAT" as ReglaChat {
+    * id_regla <<PK>>
+    --
+    enfoque_problema
+    palabras_clave
+    respuesta_orientadora
+    consejo_preventivo
+}
+
+' Relaciones y Cardinalidades
+Usuario ||--o{ Progreso : "registra"
+Guia ||--o{ Progreso : "es consultada en"
+
+Usuario ||--o{ Favorito : "guarda"
+Guia |o--o{ Favorito : "referenciada en"
+Herramienta |o--o{ Favorito : "referenciada en"
+
+Herramienta ||--o{ ReglaChat : "sugiere enlace externo (RN-03)"
+
+note right of Usuario
+  Nota de Privacidad (RNF-03 / RN-02):
+  No existe entidad para el Simulador Preventivo
+  ya que las consultas se analizan en memoria
+  y nunca se almacenan en la base de datos.
+end note
+
+@enduml
